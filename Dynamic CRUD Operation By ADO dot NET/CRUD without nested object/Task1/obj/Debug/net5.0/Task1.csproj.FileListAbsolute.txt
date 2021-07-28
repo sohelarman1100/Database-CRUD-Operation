@@ -1,0 +1,46 @@
+G:\AspDotNetExam-Assignment\Task1\Task1\bin\Debug\net5.0\Task1.exe
+G:\AspDotNetExam-Assignment\Task1\Task1\bin\Debug\net5.0\Task1.deps.json
+G:\AspDotNetExam-Assignment\Task1\Task1\bin\Debug\net5.0\Task1.runtimeconfig.json
+G:\AspDotNetExam-Assignment\Task1\Task1\bin\Debug\net5.0\Task1.runtimeconfig.dev.json
+G:\AspDotNetExam-Assignment\Task1\Task1\bin\Debug\net5.0\Task1.dll
+G:\AspDotNetExam-Assignment\Task1\Task1\bin\Debug\net5.0\ref\Task1.dll
+G:\AspDotNetExam-Assignment\Task1\Task1\bin\Debug\net5.0\Task1.pdb
+G:\AspDotNetExam-Assignment\Task1\Task1\bin\Debug\net5.0\System.Data.SqlClient.dll
+G:\AspDotNetExam-Assignment\Task1\Task1\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+G:\AspDotNetExam-Assignment\Task1\Task1\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+G:\AspDotNetExam-Assignment\Task1\Task1\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+G:\AspDotNetExam-Assignment\Task1\Task1\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\AspDotNetExam-Assignment\Task1\Task1\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\AspDotNetExam-Assignment\Task1\Task1\obj\Debug\net5.0\Task1.csproj.AssemblyReference.cache
+G:\AspDotNetExam-Assignment\Task1\Task1\obj\Debug\net5.0\Task1.GeneratedMSBuildEditorConfig.editorconfig
+G:\AspDotNetExam-Assignment\Task1\Task1\obj\Debug\net5.0\Task1.AssemblyInfoInputs.cache
+G:\AspDotNetExam-Assignment\Task1\Task1\obj\Debug\net5.0\Task1.AssemblyInfo.cs
+G:\AspDotNetExam-Assignment\Task1\Task1\obj\Debug\net5.0\Task1.csproj.CoreCompileInputs.cache
+G:\AspDotNetExam-Assignment\Task1\Task1\obj\Debug\net5.0\Task1.csproj.CopyComplete
+G:\AspDotNetExam-Assignment\Task1\Task1\obj\Debug\net5.0\Task1.dll
+G:\AspDotNetExam-Assignment\Task1\Task1\obj\Debug\net5.0\ref\Task1.dll
+G:\AspDotNetExam-Assignment\Task1\Task1\obj\Debug\net5.0\Task1.pdb
+G:\AspDotNetExam-Assignment\Task1\Task1\obj\Debug\net5.0\Task1.genruntimeconfig.cache
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\bin\Debug\net5.0\Task1.exe
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\bin\Debug\net5.0\Task1.deps.json
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\bin\Debug\net5.0\Task1.runtimeconfig.json
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\bin\Debug\net5.0\Task1.runtimeconfig.dev.json
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\bin\Debug\net5.0\Task1.dll
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\bin\Debug\net5.0\ref\Task1.dll
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\bin\Debug\net5.0\Task1.pdb
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\bin\Debug\net5.0\System.Data.SqlClient.dll
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\obj\Debug\net5.0\Task1.csproj.AssemblyReference.cache
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\obj\Debug\net5.0\Task1.GeneratedMSBuildEditorConfig.editorconfig
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\obj\Debug\net5.0\Task1.AssemblyInfoInputs.cache
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\obj\Debug\net5.0\Task1.AssemblyInfo.cs
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\obj\Debug\net5.0\Task1.csproj.CoreCompileInputs.cache
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\obj\Debug\net5.0\Task1.csproj.CopyComplete
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\obj\Debug\net5.0\Task1.dll
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\obj\Debug\net5.0\ref\Task1.dll
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\obj\Debug\net5.0\Task1.pdb
+G:\AspDotNetExam-Assignment\solution without nested object\Task1\obj\Debug\net5.0\Task1.genruntimeconfig.cache

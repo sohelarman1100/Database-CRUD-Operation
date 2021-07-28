@@ -1,0 +1,63 @@
+2021-07-25 01:54:45.033 +06:00 [INF] Application Starting up
+2021-07-25 01:56:35.208 +06:00 [INF] Application Starting up
+2021-07-25 10:20:18.887 +06:00 [INF] Application Starting up
+2021-07-25 10:44:09.036 +06:00 [INF] Application Starting up
+2021-07-25 10:45:42.408 +06:00 [INF] Application Starting up
+2021-07-25 10:46:14.151 +06:00 [INF] Application Starting up
+2021-07-25 10:54:05.126 +06:00 [INF] Application Starting up
+2021-07-25 10:55:05.597 +06:00 [INF] Application Starting up
+2021-07-25 11:17:49.709 +06:00 [INF] Application Starting up
+2021-07-25 12:48:16.607 +06:00 [INF] Application Starting up
+2021-07-25 12:54:26.607 +06:00 [INF] Application Starting up
+2021-07-25 13:19:26.454 +06:00 [INF] Application Starting up
+2021-07-25 13:26:58.890 +06:00 [INF] Application Starting up
+2021-07-25 15:16:19.488 +06:00 [INF] Application Starting up
+2021-07-25 15:23:47.558 +06:00 [INF] Application Starting up
+2021-07-25 15:27:11.884 +06:00 [INF] Application Starting up
+2021-07-25 15:42:56.760 +06:00 [INF] Application Starting up
+2021-07-25 15:44:44.110 +06:00 [INF] Application Starting up
+2021-07-25 15:51:33.417 +06:00 [INF] Application Starting up
+2021-07-25 15:52:26.931 +06:00 [INF] Application Starting up
+2021-07-25 15:53:17.155 +06:00 [INF] Application Starting up
+2021-07-25 15:55:53.789 +06:00 [INF] Application Starting up
+2021-07-25 15:57:19.211 +06:00 [INF] Application Starting up
+2021-07-25 15:59:23.477 +06:00 [INF] Application Starting up
+2021-07-25 16:12:25.439 +06:00 [INF] Application Starting up
+2021-07-25 17:12:59.306 +06:00 [INF] Application Starting up
+2021-07-25 17:22:20.098 +06:00 [INF] Application Starting up
+2021-07-25 17:23:17.262 +06:00 [ERR] Create Ticket Failed
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Tickets' with unique index 'IX_Tickets_CustomerId'. The duplicate key value is (1).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:3bfb67d5-a33f-453e-b398-6ef6b4b46f62
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at TicketBooking.Data.UnitOfWork.Save() in G:\assignment-3\TicketBookingSystem\TicketBooking.Data\UnitOfWork.cs:line 17
+   at TicketBooking.Functionality.Services.TicketService.CreateTicket(TicketBO ticket) in G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\Services\TicketService.cs:line 34
+   at TicketBookingSystem.Areas.Admin.Models.CreateTicketModel.CreateTicket() in G:\assignment-3\TicketBookingSystem\TicketBookingSystem\Areas\Admin\Models\CreateTicketModel.cs:line 43
+   at TicketBookingSystem.Areas.Admin.Controllers.TicketController.Create(CreateTicketModel model) in G:\assignment-3\TicketBookingSystem\TicketBookingSystem\Areas\Admin\Controllers\TicketController.cs:line 34
+2021-07-25 23:44:21.383 +06:00 [INF] Application Starting up

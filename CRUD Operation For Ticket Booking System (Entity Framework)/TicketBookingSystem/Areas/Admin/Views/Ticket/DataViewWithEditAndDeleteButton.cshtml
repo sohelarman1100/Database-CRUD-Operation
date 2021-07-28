@@ -1,0 +1,132 @@
+﻿@model GetTicketModel
+@{
+    ViewData["Title"] = "Edit/Delete Ticket";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="/admin/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+}
+
+@section Scripts
+{
+    <script src="/admin/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="/admin/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script>
+        $(function () {
+            $('#Tickets').DataTable({     @*Customer holo je table er data show korte chai sei table er name
+                                                eikhane letter er upper case ba lower case kono matter kore na*@
+                "processing": true,
+                "serverSide": true,
+                "ajax": "/Admin/Ticket/GetTicketData",  @*/area/Controller/jsonResult action*@
+
+                "columnDefs": [   //column defination holo ekta Json array, er moddhe amra kono column e sorasori data na
+                                  //ta button akare ba onno kono design e dekhate chaile tar kaj korte pari.
+                    {
+                        "orderable": false,      //action column er upor kono sort kora hobena tai false kora hoyeche
+                        "targets": 3,   //koto number column ke modify korbo ta, column number 0 theke start hoy
+                        "render": function (data, type, row) {
+                            return `<button type="submit" class="btn btn-info btn-sm" onclick="window.location.href=
+                                     '/admin/ticket/EditTicket/${data}'" value='${data}'>
+
+                                        <i class="fas fa-pencil-alt">
+                                        </i>
+                                        Edit
+                                    </button>
+                                    <button type="submit" class="btn btn-danger btn-sm show-bs-modal" href="#"
+                                                  data-id='${data}' value='${data}'>
+                                        <i class="fas fa-trash">
+                                        </i>
+                                        Delete
+                                    </button>`;
+                        }
+                        //uporer render er vitor href e deya link ti holo amar button e click korle kon page e jete chai oi
+                        //page er link, mane area/controller/action, ar {data} er data holo amar column tir moddhe je value
+                        //gulor poriborte amra button ba onno kichu dekhacchi oi value, ei value gulo amader button er moddhe
+                        //hidden obosthay thakbe. jemon amader eikhane Id column er ke modify kore button add kora hoyeche tai
+                        //proti record er id er jaygay edit button dekhabe but actually edit button tir moddhei amar oi record
+                        //Id hidden obosthay store ache
+                    }
+                ]
+            });
+
+            $('#Tickets').on('click', '.show-bs-modal', function (event) {  //ei part sobtai delete er jonno kora, ei part
+                                                                              //nicher function o DeletePopupPartial er kaj holo
+                                                                      //delete button e click korle kon id er record delete
+                                                                      //korte chai oi id ke temporary vabe user side e store
+                                                                      //kore rekhe asolei ki delete korte chai kina tar messege
+                                                                      //dekhabe and confirm korle temporary vabe store kore rakha
+                                                                      //id server e pathiye record delete korbe, na hoy
+                                                                      //cancel dile delete hobena.
+                var id = $(this).data("id");
+                var modal = $("#modal-default");
+                modal.find('.modal-body p').text('Are you sure you want to delete this record?')
+                $("#deleteId").val(id);
+                $("#deleteForm").attr("action", "/admin/ticket/deleteticket")
+                modal.modal('show');
+            });
+
+            $("#deleteButton").click(function () {   //ei part sobtai delete er jonno kora
+                $("#deleteForm").submit();
+            });
+
+        });
+    </script>
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Available Tickets</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Tickets</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">All Available Tickets</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="Tickets" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>CustomerId</th>
+                                <th>Destination</th>
+                                <th>TicketFee</th>
+                                <th style="width:150px">Action</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>CustomerId</th>
+                                <th>Destination</th>
+                                <th>TicketFee</th>
+                                <th>Action</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <partial name="_DeletePopupPartial">
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->

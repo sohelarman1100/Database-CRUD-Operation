@@ -1,0 +1,15 @@
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\bin\Debug\net5.0\TicketBooking.Functionality.deps.json
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\bin\Debug\net5.0\TicketBooking.Functionality.dll
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\bin\Debug\net5.0\ref\TicketBooking.Functionality.dll
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\bin\Debug\net5.0\TicketBooking.Functionality.pdb
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\obj\Debug\net5.0\TicketBooking.Functionality.csproj.AssemblyReference.cache
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\obj\Debug\net5.0\TicketBooking.Functionality.GeneratedMSBuildEditorConfig.editorconfig
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\obj\Debug\net5.0\TicketBooking.Functionality.AssemblyInfoInputs.cache
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\obj\Debug\net5.0\TicketBooking.Functionality.AssemblyInfo.cs
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\obj\Debug\net5.0\TicketBooking.Functionality.csproj.CoreCompileInputs.cache
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\obj\Debug\net5.0\TicketBooking.Functionality.dll
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\obj\Debug\net5.0\ref\TicketBooking.Functionality.dll
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\obj\Debug\net5.0\TicketBooking.Functionality.pdb
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\bin\Debug\net5.0\TicketBooking.Data.dll
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\bin\Debug\net5.0\TicketBooking.Data.pdb
+G:\assignment-3\TicketBookingSystem\TicketBooking.Functionality\obj\Debug\net5.0\TicketBooking.Functionality.csproj.CopyComplete

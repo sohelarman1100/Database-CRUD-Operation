@@ -1,0 +1,60 @@
+﻿<nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+    with font-awesome or any other icon font library -->
+        <li class="nav-item">
+            <a asp-action="Create" asp-controller="Customer" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>
+                    Add Customer
+                </p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a asp-action="GetCustomerDataView" asp-controller="Customer" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>
+                    Show Customer
+                </p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a asp-action="DataViewWithEditAndDeleteButton" asp-controller="Customer" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>
+                    Edit/Delete Customer
+                </p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a asp-action="Create" asp-controller="Ticket" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>
+                    Add Ticket
+                </p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a asp-action="GetTicketDataView" asp-controller="Ticket" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>
+                    Get All Ticket Status
+                </p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a asp-action="DataViewWithEditAndDeleteButton" asp-controller="Ticket" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>
+                    Edit/Delete Ticket
+                </p>
+            </a>
+        </li>
+
+    </ul>
+</nav>
